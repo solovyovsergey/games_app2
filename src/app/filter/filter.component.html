@@ -1,0 +1,16 @@
+<div class="filter">
+  <div class="filter__title">{{title}}</div>
+  <div class="filter__list">
+    <div
+      *ngFor="let merchant of merchants"
+      class="filter__list-item">
+      <label>
+        <input
+          type="checkbox"
+          [(ngModel)]="merchant.checked"
+          (change)="onChange()"
+        >{{merchant.Name}}
+      </label>
+    </div>
+  </div>
+</div>

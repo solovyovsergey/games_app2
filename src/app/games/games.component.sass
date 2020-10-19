@@ -1,0 +1,53 @@
+.games
+  display: flex
+  flex-wrap: wrap
+  padding: 0 15px
+
+  .item
+    margin-bottom: 30px
+    position: relative
+
+    .item__content
+      height: 100%
+      margin: 0 15px
+      cursor: pointer
+      border: none
+      &:hover
+        img
+          filter: brightness(30%)
+          trasition: .5s
+
+      &:hover .item__content-info
+        opacity: 1
+        transition: .5s ease-in
+        z-index: 2
+
+      img
+        width: 100%
+        border-radius: 10px
+        background: #fff
+        border: none
+        box-shadow: 0 0 6px #000
+        filter: none
+
+.item__content-info
+  position: absolute
+  top: 10%
+  left: 0
+  right: 0
+  bottom: 0
+  display: flex
+  flex-direction: column
+  padding: 0 15px
+  opacity: 0
+  z-index: -1
+  font-size: .7rem
+
+  .info-name
+    display: flex
+    justify-content: center
+
+  .info-buttons
+    margin-top: 15px
+    display: flex
+    justify-content: center

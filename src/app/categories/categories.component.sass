@@ -1,0 +1,30 @@
+.categories
+  max-width: 100%
+  box-sizing: border-box
+  overflow-x: scroll
+
+  &::-webkit-scrollbar
+    width: 0
+
+  ul
+    display: flex
+    align-items: center
+    right: 0
+    left: 0
+    font-size: .6rem
+    margin-bottom: 0
+
+    :last-child
+      margin-right: none
+  li
+    list-style: none
+    padding: 0 9px
+    border: 1px solid gray
+    border-radius: 15px
+    min-width: max-content
+    flex-grow: 1
+    margin-right: 10px
+    cursor: pointer
+
+  .selected
+    background-color: gray

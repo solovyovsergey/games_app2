@@ -1,0 +1,9 @@
+<div class="categories">
+  <ul>
+    <li
+      *ngFor="let category of categories"
+      (click)="onChangeCategory(category)"
+      [class.selected]="category.ID === selectedId"
+    >{{category.Name.en}}</li>
+  </ul>
+</div>

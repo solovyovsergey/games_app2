@@ -1,0 +1,19 @@
+<div class="games">
+  <div *ngFor="let game of games" class="item">
+    <div class="item__content">
+      <div class="item__content-img">
+        <img [src]="getUrl(game.Image)" alt="">
+      </div>
+      <div class="item__content-info">
+        <div class="info-name">
+          <span>{{game.Name.en}}</span>
+        </div>
+        <div class="info-buttons">
+          <div class="button">
+            <a [href]="getUrl(game.Url)">Играть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
